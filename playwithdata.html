@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play With Data</title>
+    <link rel="stylesheet" href="res/style.css">
+    <link rel="stylesheet" href="res/pldata.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div>
+            <a href="index.html">
+                Home
+            </a>
+        </div>
+        <div class="selected">Play with Cars</div>
+        <div>
+            <a href="about.html">
+                About
+            </a>
+        </div>
+    </div>
+
+    <div class="playArea">
+        <div>
+
+            <form method="post" id="playForm">
+                <label for="plot">What you want to plot with Car Variant!?</label>
+
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+                <select name="plot" id="plot" style="width: 400px;">
+                    <option value="temp">Choose Specification</option>
+                    <option value="1">City Mileage</option>
+                    <option value="2">Displacement (cc)</option>
+                    <option value="3">Boot Space</option>
+                    <option value="4">Fuel Tank Capacity</option>
+                    <option value="5">Seat Capacity</option>
+                    <option value="6">ARAI-CERTIFIED MILEAGE</option>
+                </select>
+
+                &emsp;
+
+                <input type="submit" value="Get your results!" id="btn">
+            </form>
+
+        </div>
+
+        <div>
+            <div id="play1">
+                <p>Please Select Your Specification!</p>
+                <center>
+                    <img src="res/confused.gif" height="300px" alt="Please Select Your Specification" style="transform: translateY(-100px);">
+                </center>
+            </div>
+            <div id="play2">
+                <iframe id="playFrame" title="REPORT" width="1000" height="550" frameborder="0" allowFullScreen="false"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" id="foot">
+        <center>
+            Made with ❤ by <a href="https://linktr.ee/Aastha_Chauhan" target="_blank">Aastha Chauhan</a>
+        </center>
+    </div>
+
+    <script src="script/pldata.js"></script>
+</body>
+</html>

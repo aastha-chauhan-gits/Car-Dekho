@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling Saathi</title>
+    <link rel="stylesheet" href="res/style.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="selected">Home</div>
+        <div>
+            <a href="playwithdata.html">
+                Play with Cars
+            </a>
+        </div>
+        <div>
+            <a href="about.html">
+                About
+            </a>
+        </div>
+    </div>
+
+    <div class="landingArea">
+        <div class="statementArea">
+            <h1 style="font-size: 35px; margin-top: 50px;">Choose a suitable Car</h1>
+            <p>
+                Harness the power of Data Analysis to select the best car for your Trip 
+                with your friends!
+            </p>
+        </div>
+        <div class="logoArea">
+            <center>
+                <img src="res/CarDekhologo.png" alt="LOGO" style="width: 500px; margin-top: 0px; margin-left: -50px;"> 
+            </center>
+        </div>
+    </div>
+
+    <hr><br>
+
+    <div class="queryArea">
+        <div class="formArea">
+            <div class="formBox">
+                <h1 style="font-size: 30px;">Tell us your needs!</h1>
+                <br>
+
+                <form style="font-size: 19px;" method="post" id="displayForm">
+
+                    <select name="journeyType" id="journeyType" style="width: 400px;">
+                        <option value="temp">Choose Your Purpose</option>
+                        <option value="1">Daily Use</option>
+                        <option value="2">Long Drive</option>
+                    </select>
+                    <br><br><br>
+                    <select name="priceRange" id="priceRange" style="width: 400px;">
+                        <option value="temp">Price Range</option>
+                        <option value="1">&lt;= 10,00,000/-</option>
+                        <option value="2">10,00,000/- - 70,00,000/-</option>
+                        <option value="3">&gt; 70,00,000/-</option>
+                    </select>
+                    <br><br><br>
+                    <input type="submit" value="Get your results!" id="btn">
+
+                </form>
+            </div>
+        </div>
+        <div class="displayArea">
+            <div id="number1">
+                <p>Please Select your Preferences!</p>
+                <center>
+                    <img src="res/confused.gif" height="300px" alt="Please Select your Preferences">
+                </center>
+            </div>
+            <div id="number2">
+                <iframe id="iFrame" title="REPORT" width="700" height="450" frameborder="0" allowFullScreen="false"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <center>
+            Made with ❤ by <a href="https://linktr.ee/Aastha_Chauhan" target="_blank">Aastha Chauhan</a>
+        </center>
+    </div>
+
+    <script src="script/index.js"></script>
+</body>
+</html>

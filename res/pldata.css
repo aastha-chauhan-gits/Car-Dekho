@@ -1,0 +1,42 @@
+.playArea {
+    padding: 50px;
+    padding-top: 50px;
+}
+
+.playArea #play1 {
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+.playArea #play2 {
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+.playArea #play1 {
+    display: block;
+}
+
+.playArea #play2 {
+    display: none;
+}
+
+.playArea #playForm #btn {
+    width: 220px;
+    height: 35px;
+    background-color: #52ab98;
+    color: white;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.playArea #playForm #btn:hover {
+    cursor: pointer;
+}
+
+#foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
