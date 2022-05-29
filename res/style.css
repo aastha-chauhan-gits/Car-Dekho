@@ -1,10 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'kanit', sans-serif;
     font-size: 22px;
     scroll-behavior: smooth;
 }
+/* This will work on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #d2ebe5 #52ab98;
+  }
+  
+  /* Targtes on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #52ab98;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #d2ebe5;
+    border-radius: 20px;
+    border: 3px solid #52ab98;
+  }
 
 body {
     margin: 0px;
@@ -33,7 +53,7 @@ body {
 
 .navbar .selected{
     background-color: #52ab98;
-    color: white;
+    color: #d2ebe5;
 }
 
 .navbar a {
@@ -81,7 +101,7 @@ hr {
     padding: 50px;
     padding-top: 30px;
     border-radius: 20px;
-    background-color: white;
+    background-color: #d2ebe5;
 }
 
 .queryArea .formArea .formBox #journeyType {
@@ -96,7 +116,7 @@ hr {
     width: 220px;
     height: 35px;
     background-color: #52ab98;
-    color: white;
+    color: #d2ebe5;
     border: none;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
@@ -119,13 +139,15 @@ hr {
 }
 
 .footer {
-    background-color: #2b6777;
+    background-color: #52ab98;
     height: 60px;
     padding-top: 25px;
-    color: white;
+    color: #d2ebe5;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8);
 }
 
 .footer a {
     text-decoration: none;
-    color: white;
+    color: #d2ebe5;
+    font-style: bold;
 }

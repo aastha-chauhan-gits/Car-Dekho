@@ -1,22 +1,28 @@
+// GET THE FORM ELEMENT
 const form  = document.getElementById('displayForm');
-
+// THIS FUNCTION IS CALLED UPON SUBMITTING THE FORM
 form.addEventListener('submit', (event) => {
 
+    // THIS FUNCION IS CALLED UPON SELECTING DROP BOX 1
     var jT = document.getElementById('journeyType');
     var jtID = jT.value;
     // console.log(jtID);
 
+    // THIS FUNCTION IS CALLED UPON SELECTING DROP BOX 2
     var pr = document.getElementById('priceRange');
     var prID = pr.value;
     // console.log(prID);
 
+    // CONDITION FOR SELECTING NOTHING IN DROP BOX
     if (jtID == "temp" && prID == "temp") {
         document.getElementById('number1').style.display = "block";
         document.getElementById('number2').style.display = "none";
     }
+    // CONDITION FOR SELECTING ONLY ONE DROP BOX
     else if (jtID == "temp" || prID == "temp") {
         alert('Please Select on both Fields!');
     }
+    // CONDITIONS FOR DIFFERENT COMBINATIONS MADE
     else {
 
         if (jtID == "1" && prID == "1") {

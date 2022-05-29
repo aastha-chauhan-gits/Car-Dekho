@@ -1,5 +1,7 @@
+// GET THE FORM ELEMENT FROM PLAY WITH CAR SECTION
 const form  = document.getElementById('playForm');
 
+// THIS FUNTION IS CALLED ON HITTING THA GET RESULT BUTTON
 form.addEventListener('submit', (event) => {
 
     var pl = document.getElementById('plot');

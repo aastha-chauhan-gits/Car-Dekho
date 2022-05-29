@@ -4,59 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Dekho</title>
+    <!-- TITLE OF THE PAGE "CarGeek" -->
+    <title>CarGeek</title>
+    <!-- --------------------------- -->
+    <!-- IMPORT OF CSS -->
     <link rel="stylesheet" href="res/style.css">
+    <!-- --------------------------- -->
+    <!-- INSERTING FAVICON -->
     <link rel="icon" type="image/x-icon" href="res/favicon.png">
+    <!-- --------------------------- -->
 </head>
 <body>
     
+    <!-- NAVBAR -->
     <div class="navbar">
-        <div class="selected">Home</div>
+        <!-- HOME SECTION -->
+        <div class="selected">Home
+        </div>
+        <!-- PLAY WITH DATA SECTION-->
         <div>
             <a href="playwithdata.html">
                 Play with Cars
             </a>
         </div>
+        <!-- ABOUT SECTION -->
         <div>
             <a href="about.html">
                 About
             </a>
         </div>
     </div>
+    <!-- --------------------------- -->
 
+    <!-- LANDING AREA -->
+    <!-- PARAGRAPH -->
     <div class="landingArea">
         <div class="statementArea">
-            <h1 style="font-size: 35px; margin-top: 50px;">Choose a suitable Car</h1>
+            <h1 style="font-size: 45px; margin-top: -25px;">Choose Best suitable Car based on it's Application</h1>
             <p>
-                Let's choose a suitable car for you by using the power of Data Analysis
+               Analyse and choose the CARS based on it's Application in different price ranges along with fuel type.
+               <br>You can also analyse the CAR VARIANTS with different specifications by customising according to your need. 
             </p>
             <p style="font-style: italic; font-size: 15px;">
-                If you have Signed-in to PowerBI in your Desktop, please Sign-Out of it, and Login with the provided credentials
+                If you have Signed-in to PowerBI in your Browser, please Sign-Out of it, and Login with the provided credentials
             </p>
         </div>
+    <!-- --------------------------- -->
+    <!-- PAGE LOGO -->
         <div class="logoArea">
             <center>
-                <img src="res/CarDekhologo.png" alt="LOGO" style="width: 500px; margin-top: 0px; margin-left: -50px;"> 
+                <img src="res/CarDekho.png" alt="LOGO" style="width: 500px; margin-top: 0px; margin-left: -50px; -webkit-filter: drop-shadow(1px 1px 1px #698B69);filter: drop-shadow(3px 3px 3px #698B69);"> 
             </center>
         </div>
     </div>
+    <!-- --------------------------- -->
 
     <hr><br>
 
+    <!-- QUERY AREA -->
     <div class="queryArea">
+        <!-- FORM AREA -->
         <div class="formArea">
             <div class="formBox">
                 <h1 style="font-size: 30px;">Tell us your needs!</h1>
                 <br>
 
+                <!-- DROP BOX 1-CHOOSE THE APPLICATION -->
                 <form style="font-size: 19px;" method="post" id="displayForm">
-
                     <select name="journeyType" id="journeyType" style="width: 400px;">
-                        <option value="temp">Choose Your Purpose</option>
+                        <option value="temp">Choose the Application</option>
                         <option value="1">Daily Use</option>
                         <option value="2">Long Drive</option>
                     </select>
                     <br><br><br>
+                    <!-- DROP BOX 2- PRICE RANGE -->
                     <select name="priceRange" id="priceRange" style="width: 400px;">
                         <option value="temp">Price Range</option>
                         <option value="1">&lt;= 10,00,000/-</option>
@@ -69,25 +90,35 @@
                 </form>
             </div>
         </div>
+       <!-- --------------------------- --> 
+       <!-- DISPLAY AREA -->
         <div class="displayArea">
             <div id="number1">
-                <p>Please Select your Preferences!</p>
+                <!-- IF THE USER HASN'T SELECTED ANYTHING -->
+                <center><p>Please Select your Preferences!</p></center>
                 <center>
-                    <img src="res/confused.gif" height="300px" alt="Please Select your Preferences">
+                    <img src="res/Bulb.gif" height="350px" alt="Please Select your Preferences">
                 </center>
             </div>
+            <!-- IFRAME AREA FOR POWER BI -->
             <div id="number2">
                 <iframe id="iFrame" title="REPORT" width="700" height="450" frameborder="0" allowFullScreen="false"></iframe>
             </div>
         </div>
+        <!-- --------------------------- -->
     </div>
+    <!-- --------------------------- -->
 
+    <!-- FOOTER AREA -->
     <div class="footer">
         <center>
-            Made with 💕 by <a href="https://linktr.ee/Aastha_Chauhan" target="_blank">Aastha Chauhan</a>
+            Made with 💖 by <a href="https://linktr.ee/Aastha_Chauhan" target="_blank">Aastha Chauhan</a>
         </center>
     </div>
+    <!-- --------------------------- -->
 
+    <!-- JAVA SCRIPT IMPORTED -->
     <script src="script/index.js"></script>
+    <!-- --------------------------- -->
 </body>
 </html>
