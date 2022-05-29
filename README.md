@@ -18,7 +18,7 @@ The basic idea of the app is to get the data which user wants to see, then impor
 
 I have used the dataset readily provided on the Acehacker Website with the challenge, [here](https://acehacker.com/microsoft/engage2022/cars_engage_2022.csv) is the link to it.
 
-As a first step, I've cleaned the dataset using [Jupyter Notebook](https://github.com/aastha-chauhan-gits/Car-Dekho/blob/master/notebook.ipynb) and some mannual work using Microsoft Excel
+As a first step, I've cleaned the dataset using [Jupyter Notebook](https://github.com/aastha-chauhan-gits/CarGeek/blob/master/notebook.ipynb) and some mannual work using Microsoft Excel
 
 Now the dataset is imported in Microsoft Power BI, on which graphs are made as per the data specified, and then they are embedded in my website
 
@@ -36,4 +36,4 @@ Now the dataset is imported in Microsoft Power BI, on which graphs are made as p
 
 # Deployment
 
-The app is deployed on GitHub Pages, you can see it here : [DEPLOYMENT](https://aastha-chauhan-gits.github.io/Car-Dekho/)
+The app is deployed on GitHub Pages, you can see it here : [DEPLOYMENT](https://aastha-chauhan-gits.github.io/CarGeek/)
