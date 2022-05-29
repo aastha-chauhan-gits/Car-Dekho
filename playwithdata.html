@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE OF THE PAGE -->
     <title>Play With Cars</title>
+    <!-- --------------------------- -->
+    <!-- IMPORTING CSS -->
     <link rel="stylesheet" href="res/style.css">
     <link rel="stylesheet" href="res/pldata.css">
+    <!-- INSERTING FAVICON -->
     <link rel="icon" type="image/x-icon" href="res/favicon.png">
 </head>
 <body>
-    
+    <!-- NAVBAR -->
     <div class="navbar">
         <div>
             <a href="index.html">
@@ -24,15 +28,19 @@
             </a>
         </div>
     </div>
+    <!-- --------------------------- -->
 
+    <!-- PLAY AREA -->
     <div class="playArea">
         <div>
 
+            <!-- FORM AREA -->
             <form method="post" id="playForm">
-                <label for="plot">What you want to plot with Car Variant!?</label>
+                <label for="plot">What you want to plot with Car Variant?</label>
 
                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 
+                <!-- DROP BOX -->
                 <select name="plot" id="plot" style="width: 400px;">
                     <option value="temp">Choose Specification</option>
                     <option value="1">City Mileage</option>
@@ -47,27 +55,36 @@
 
                 <input type="submit" value="Get your results!" id="btn">
             </form>
+            <!-- --------------------------- -->
 
         </div>
+        <!-- --------------------------- -->
 
         <div>
+            <!-- IF THE USER HASN'T SELECTED ANYTHING -->
             <div id="play1">
-                <p>Please Select Your Specification!</p>
+                <center><p>Please Select Your Specification!</p></center>
                 <center>
-                    <img src="res/confused.gif" height="300px" alt="Please Select Your Specification" style="transform: translateY(-100px);">
+                    <img src="res/Bulb.gif" height="300px" alt="Please Select Your Specification" style="transform: translateY(-30px);">
                 </center>
             </div>
+            <!-- --------------------------- -->
+            <!-- IFRAME -->
             <div id="play2">
                 <iframe id="playFrame" title="REPORT" width="1000" height="550" frameborder="0" allowFullScreen="false"></iframe>
             </div>
+            <!-- --------------------------- -->
         </div>
     </div>
+    <!-- --------------------------- -->
 
+    <!-- FOOTER AREA -->
     <div class="footer" id="foot">
         <center>
-            Made with 💕 by <a href="https://linktr.ee/Aastha_Chauhan" target="_blank">Aastha Chauhan</a>
+            Made with 💖 by <a href="https://linktr.ee/Aastha_Chauhan" target="_blank">Aastha Chauhan</a>
         </center>
     </div>
+    <!-- --------------------------- -->
 
     <script src="script/pldata.js"></script>
 </body>
