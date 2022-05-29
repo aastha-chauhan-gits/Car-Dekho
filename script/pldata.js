@@ -1,11 +1,13 @@
 // GET THE FORM ELEMENT FROM PLAY WITH CAR SECTION
 const form  = document.getElementById('playForm');
 
-// THIS FUNTION IS CALLED ON HITTING THA GET RESULT BUTTON
+// THIS FUNTION IS CALLED ON HITTING THE GET RESULT BUTTON
 form.addEventListener('submit', (event) => {
 
     var pl = document.getElementById('plot');
     var plID = pl.value;
+
+    // If the user hasn't selected anything, then the "Please Specify" sreen is rendered
 
     if (plID == "temp") {
         document.getElementById('play1').style.display = "block";
@@ -15,6 +17,9 @@ form.addEventListener('submit', (event) => {
         document.getElementById('foot').style.left = "0";
         document.getElementById('foot').style.width = "100%";
     }
+
+    // Elsewise we get the graph as per the choice made
+
     else {
 
         if (plID == "1") {
@@ -35,6 +40,8 @@ form.addEventListener('submit', (event) => {
         else if (plID == "6") {
             document.getElementById('playFrame').setAttribute('src',"https://app.powerbi.com/reportEmbed?reportId=096f6c5f-9ca6-4b3a-9fe0-f92bcfa62f17&autoAuth=true&ctid=242d5969-d4ad-4e47-9c9c-8af18d85fa02&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9");
         }
+
+        // then obviously, some cleverness must be shown to replace the static screen with the graph
 
         document.getElementById('play1').style.display = "none";
         document.getElementById('play2').style.display = "block";
